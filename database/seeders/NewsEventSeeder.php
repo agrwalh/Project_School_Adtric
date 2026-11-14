@@ -9,100 +9,101 @@ use Illuminate\Database\Seeder;
 class NewsEventSeeder extends Seeder
 {
     /**
-     * Run the database seeds.
+     * Run the database seeds matching the exact items in Screenshot 12 ("THE EVENT DIARY").
      */
     public function run(): void
     {
         $items = [
             [
-                'title' => 'Diwali Celebrations & Cultural Fest',
+                'title' => 'Diwali celebration',
                 'category' => 'Event',
-                'event_date' => Carbon::now()->subDays(4)->format('Y-m-d'),
+                'event_date' => Carbon::now()->subDays(2)->format('Y-m-d'),
                 'image' => 'news-events/diwali.jpg',
-                'short_description' => 'Students and staff celebrated the festival of lights with traditional performances, rangoli competitions, and cultural workshops.',
-                'content' => "<p>The Manthan School illuminated with festive radiance as the school community came together to celebrate Diwali. The festivities kicked off with an auspicious diya lighting ceremony followed by soulful musical recitals and traditional dance performances by early years learners.</p><p>Students engaged in eco-friendly rangoli making, handcrafted clay diya painting, and collaborative storytelling sessions highlighting the values of kindness, victory of good over evil, and empathy. Parents were also invited to witness an inspiring theatrical presentation prepared by our kindergarten children.</p><p>The day concluded with sweet distributions and a pledge by the entire student body to celebrate a pollution-free green Diwali.</p>",
+                'short_description' => 'Festive joy and cultural performances as early learners celebrate the festival of lights with handcrafted diyas and storytelling.',
+                'content' => '<p>The Manthan School illuminated with festive radiance as the school community celebrated Diwali. Children engaged in eco-friendly rangoli making, clay diya painting, and collaborative storytelling sessions highlighting the values of kindness and empathy.</p>',
                 'is_published' => true,
             ],
             [
-                'title' => 'Annual Sports Day: Sprinting Towards Excellence',
+                'title' => 'Sports day, portrait frame',
                 'category' => 'Event',
-                'event_date' => Carbon::now()->subDays(10)->format('Y-m-d'),
+                'event_date' => Carbon::now()->subDays(5)->format('Y-m-d'),
                 'image' => 'news-events/sports.jpg',
-                'short_description' => 'Students showcased agility, teamwork, and sportsmanship across various track, obstacle, and athletic competitions.',
-                'content' => "<p>Energy, passion, and unyielding team spirit echoed across the sports grounds during the Annual Sports Day celebration at The Manthan School. Over 300 students participated enthusiastically across diverse fun obstacle courses, 50m sprints, relay races, and balance drills.</p><p>The event was graced by esteemed athletic mentors who commended the children's disciplined coordination and perseverance. Trophies and medals were awarded across all age groups, celebrating not just winning, but active participation and healthy living.</p>",
+                'short_description' => 'Agility, team spirit, and physical coordination showcased across fun track sprints and obstacle balance drills.',
+                'content' => '<p>Energy, passion, and unyielding team spirit echoed across our sports grounds during the Annual Sports Day celebration. Over 300 early years students participated enthusiastically across diverse fun obstacle courses, 50m sprints, and relay races.</p>',
                 'is_published' => true,
             ],
             [
-                'title' => 'Janmashtami Utsav & Musical Extravaganza',
+                'title' => 'Janmashtami Celebration',
                 'category' => 'Event',
-                'event_date' => Carbon::now()->subDays(18)->format('Y-m-d'),
+                'event_date' => Carbon::now()->subDays(9)->format('Y-m-d'),
                 'image' => 'news-events/janmashtami.jpg',
-                'short_description' => 'Joyful festivities including classical dance, flute decoration, and interactive enactment of Krishna folklore.',
-                'content' => "<p>The campus transformed into a vibrant cultural tableau as our pre-nursery and nursery children came dressed in colorful traditional attire portraying Radha and Krishna. The auditorium resonated with cheerful devotional rhymes and cheerful laughter.</p><p>Children took part in butter pot decoration crafts, peacock feather headband making, and an interactive puppet show demonstrating teamwork, friendship, and moral values.</p>",
+                'short_description' => 'Cheer, classical tunes, and colorful folk attire during our early childhood Janmashtami cultural festival.',
+                'content' => '<p>The campus transformed into a colorful cultural celebration as pre-nursery and nursery children dressed in traditional attire. Rhymes, puppet shows, and interactive storytelling made the day magical.</p>',
                 'is_published' => true,
             ],
             [
-                'title' => '1st Prize at National Inter-School Storytelling Contest',
+                'title' => 'Storytelling competition',
                 'category' => 'Achievement',
-                'event_date' => Carbon::now()->subDays(25)->format('Y-m-d'),
+                'event_date' => Carbon::now()->subDays(14)->format('Y-m-d'),
                 'image' => 'news-events/storytelling.jpg',
-                'short_description' => 'Our young orators brought home prestigious laurels in voice modulation, narrative pacing, and expression.',
-                'content' => "<p>We are exceedingly proud to announce that students of Grade 1 and 2 from The Manthan School clinched the championship trophy at the National Storytelling and Oratory Conclave 2026.</p><p>Competing against 45 leading schools across the country, our learners captivated the jury with their dramatic flair, vocabulary enrichment, and confident stage presence. Kudos to our educators and speech mentors for nurturing these talents.</p>",
+                'short_description' => 'Young scholars demonstrate oratory flair, voice modulation, and creative narrative expression.',
+                'content' => '<p>We are exceedingly proud to announce that students from The Manthan School won top laurels at the National Storytelling and Oratory Conclave, captivating the jury with their vocabulary enrichment and confident presence.</p>',
                 'is_published' => true,
             ],
             [
-                'title' => 'Creative Strokes: Annual Art & Craft Exhibition',
+                'title' => 'Fancy dress',
                 'category' => 'Event',
-                'event_date' => Carbon::now()->subDays(32)->format('Y-m-d'),
+                'event_date' => Carbon::now()->subDays(20)->format('Y-m-d'),
+                'image' => 'news-events/fancy_dress.jpg',
+                'short_description' => 'Space explorers, community helpers, and storybook characters brought to life by imaginative learners.',
+                'content' => '<p>Creativity and confidence took center stage as children took on different personas, delivering short monologues about historical figures, astronauts, and community guardians.</p>',
+                'is_published' => true,
+            ],
+            [
+                'title' => 'Art exhibition',
+                'category' => 'Event',
+                'event_date' => Carbon::now()->subDays(27)->format('Y-m-d'),
                 'image' => 'news-events/art.jpg',
-                'short_description' => 'A vibrant exhibition of paintings, recycled sculptures, and tactile crafts created by our budding artists.',
-                'content' => "<p>Creativity knows no boundaries! The Creative Strokes exhibition provided a platform for students from Toddlers to Grade 2 to showcase their imaginative art. The exhibition gallery featured watercolor landscapes, pottery artifacts, papier-mâché sculptures, and recycled material installations.</p><p>Visiting parents praised the thematic depth and innovative medium exploration guided by the school's dedicated visual arts faculty.</p>",
+                'short_description' => 'Creative strokes: A colorful gallery of watercolor canvases, clay pottery, and recycled material crafts.',
+                'content' => '<p>The Creative Strokes exhibition provided a platform for students from Toddlers to Grade 2 to showcase their tactile creations. Parents praised the thematic depth and innovative medium exploration.</p>',
                 'is_published' => true,
             ],
             [
-                'title' => 'Launch of Advanced Robotics & AI Maker Space',
-                'category' => 'News',
-                'event_date' => Carbon::now()->subDays(40)->format('Y-m-d'),
-                'image' => 'news-events/robotics.jpg',
-                'short_description' => 'State-of-the-art experiential laboratory equipped with modular robotics kits, sensor modules, and logic boards.',
-                'content' => "<p>In keeping with our vision of progressive experiential learning, The Manthan School is thrilled to inaugurate its new Robotics & AI Innovation Lab. Designed specifically for early childhood through primary learners, the facility introduces computational logic and creative problem solving through hands-on play.</p><p>Students will work with age-appropriate tangible coding blocks, tactile sensor circuits, and collaborative building modules that bring science and math concepts to life.</p>",
-                'is_published' => true,
-            ],
-            [
-                'title' => 'Cambridge English Partner School Distinction',
-                'category' => 'Achievement',
-                'event_date' => Carbon::now()->subDays(55)->format('Y-m-d'),
-                'image' => 'news-events/cambridge.jpg',
-                'short_description' => 'Awarded prestigious recognition for excellence in foundational English language acquisition and phonics training.',
-                'content' => "<p>The Manthan School has been officially conferred the Cambridge English Partner Distinction in recognition of its structured phonics, early literacy framework, and communicative language development across all classrooms.</p><p>This accolade is a testament to our ongoing investment in world-class teacher training and internationally benchmarked curricula.</p>",
-                'is_published' => true,
-            ],
-            [
-                'title' => 'Nature & Biodiversity Field Trip to Regional Botanical Garden',
+                'title' => 'Field trip group',
                 'category' => 'Event',
-                'event_date' => Carbon::now()->subDays(62)->format('Y-m-d'),
+                'event_date' => Carbon::now()->subDays(35)->format('Y-m-d'),
                 'image' => 'news-events/fieldtrip.jpg',
-                'short_description' => 'Children explored indigenous flora, medicinal herbs, and butterfly conservatory in an immersive outdoor lesson.',
-                'content' => "<p>Learning extended beyond four walls as our nursery and kindergarten students spent an exhilarating day exploring nature at the regional botanical garden. Guided by naturalists, the children touched different leaf textures, observed pollination in the butterfly conservatory, and identified seasonal fruit trees.</p><p>The trip emphasized environmental stewardship, sensory discovery, and hands-on observation in alignment with our holistic growth curriculum.</p>",
+                'short_description' => 'Hands-on experiential discovery exploring wildlife habitats, botanical gardens, and nature trails.',
+                'content' => '<p>Learning extended beyond four walls as our nursery and kindergarten students spent an exhilarating day exploring nature at the regional botanical conservatory.</p>',
+                'is_published' => true,
+            ],
+            [
+                'title' => 'Graduation, Grade 2',
+                'category' => 'Achievement',
+                'event_date' => Carbon::now()->subDays(42)->format('Y-m-d'),
+                'image' => 'news-events/graduation.jpg',
+                'short_description' => 'Honouring foundational milestones: Celebrating our graduates as they transition to middle school learning.',
+                'content' => '<p>Caps flying high! A heartfelt graduation ceremony bidding farewell to Grade 2 scholars as they step forward into broader academic chapters.</p>',
                 'is_published' => true,
             ],
         ];
 
+        // Wipe old records to ensure clean sync
+        NewsEvent::truncate();
+
         foreach ($items as $item) {
             $slug = NewsEvent::generateUniqueSlug($item['title']);
 
-            NewsEvent::updateOrCreate(
-                ['slug' => $slug],
-                [
-                    'title' => $item['title'],
-                    'category' => $item['category'],
-                    'event_date' => $item['event_date'],
-                    'image' => $item['image'],
-                    'short_description' => $item['short_description'],
-                    'content' => $item['content'],
-                    'is_published' => $item['is_published'],
-                ]
-            );
+            NewsEvent::create([
+                'title' => $item['title'],
+                'slug' => $slug,
+                'category' => $item['category'],
+                'event_date' => $item['event_date'],
+                'image' => $item['image'],
+                'short_description' => $item['short_description'],
+                'content' => $item['content'],
+                'is_published' => $item['is_published'],
+            ]);
         }
     }
 }
