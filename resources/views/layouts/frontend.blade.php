@@ -145,13 +145,23 @@
     <!-- ============================================================== -->
     <!-- SECTION 14: FOOTER (Exact Match to Screenshot 6)               -->
     <!-- ============================================================== -->
-    <footer id="contact" class="bg-brand-navy text-white pt-14 pb-8 relative overflow-hidden">
+    <footer id="contact" class="bg-brand-navy text-white pt-16 pb-8 relative overflow-visible">
         
-        <!-- Top Cloud Curves Divider -->
-        <div class="absolute top-0 left-0 right-0 h-8 w-full overflow-hidden leading-none pointer-events-none rotate-180">
-            <svg class="relative block w-full h-8 text-white fill-current" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <!-- Top Cloud Curves Divider with 3D Avatars (Matching Screenshot 6) -->
+        <div class="absolute top-0 left-0 right-0 h-10 w-full overflow-hidden leading-none pointer-events-none rotate-180">
+            <svg class="relative block w-full h-10 text-white fill-current" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M0,0 C150,90 350,-40 500,60 C650,160 900,10 1200,40 L1200,120 L0,120 Z"></path>
             </svg>
+        </div>
+
+        <!-- 3D Boy Writing (Left) & 3D Girl Reading (Right) on Footer Top Wave -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative pointer-events-none">
+            <img src="{{ asset('mockup_assets/footer_boy.png') }}" 
+                 alt="Boy writing" 
+                 class="absolute -top-24 sm:-top-28 left-4 sm:left-12 w-28 sm:w-36 h-auto z-20 drop-shadow-md">
+            <img src="{{ asset('mockup_assets/footer_girl.png') }}" 
+                 alt="Girl reading" 
+                 class="absolute -top-24 sm:-top-28 right-4 sm:right-12 w-28 sm:w-36 h-auto z-20 drop-shadow-md">
         </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-4">
@@ -259,6 +269,29 @@
 
         </div>
     </footer>
+
+    <!-- Floating Chat & WhatsApp Action Widgets (Matching Screenshot 6) -->
+    <div class="fixed bottom-6 right-6 z-40 flex flex-col items-center space-y-3">
+        <!-- Live Chat Bubble -->
+        <a href="#enquiry" 
+           aria-label="Chat with Admissions"
+           class="w-12 h-12 rounded-full bg-brand-navy hover:bg-brand-navy-dark text-white flex items-center justify-center shadow-2xl transition transform hover:scale-110 border-2 border-white/80 group">
+            <svg class="w-6 h-6 fill-current group-hover:scale-110 transition" viewBox="0 0 24 24">
+                <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/>
+            </svg>
+        </a>
+
+        <!-- WhatsApp Floating Button -->
+        <a href="https://wa.me/919643304760" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           aria-label="Connect on WhatsApp"
+           class="w-12 h-12 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white flex items-center justify-center shadow-2xl transition transform hover:scale-110 border-2 border-white/80 group">
+            <svg class="w-6 h-6 fill-current group-hover:scale-110 transition" viewBox="0 0 24 24">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.983.541 1.839.818 2.796.818 3.179 0 5.766-2.586 5.767-5.766.001-3.18-2.585-5.766-5.767-5.766zm3.374 8.243c-.145.405-.729.743-1.047.788-.309.043-.699.066-2.261-.582-1.999-.828-3.262-2.887-3.361-3.02-.099-.133-.809-1.077-.809-2.053 0-.976.512-1.455.694-1.654.182-.199.397-.249.53-.249.133 0 .265.002.381.008.123.006.287-.047.45.344.166.398.564 1.378.614 1.478.05.1.083.216.017.348-.066.133-.1.216-.199.332-.099.116-.208.26-.297.349-.1.1-.204.208-.088.407.116.199.516.852 1.107 1.38.761.679 1.402.889 1.601.989.199.1.315.083.431-.05.116-.133.498-.581.63-.78.133-.199.265-.166.448-.099.182.066 1.157.546 1.356.645.199.1.332.149.381.232.05.083.05.481-.095.886zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.662 1.435 5.178L2 22l4.981-1.398A9.954 9.954 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/>
+            </svg>
+        </a>
+    </div>
 
     <!-- Mobile Drawer Script -->
     <script>
