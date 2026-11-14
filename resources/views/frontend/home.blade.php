@@ -119,17 +119,21 @@
 <section class="bg-white py-16 lg:py-20 relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         
-        <!-- Top Left Running 3D Boy Avatar from Screenshot 10 -->
-        <div class="flex items-center space-x-4 mb-4">
-            <img src="{{ asset('mockup_assets/boy_running.png') }}" 
-                 alt="Joyful Student Running" 
-                 class="w-20 sm:w-28 h-auto drop-shadow-sm select-none">
-            <div>
+        <!-- Top Section Header with Running 3D Boy on Top-Left and Centered Title -->
+        <div class="relative flex items-center justify-center mb-10 min-h-[80px]">
+            <!-- Running 3D Boy on the Left (from Screenshot 10) -->
+            <div class="absolute left-0 top-0 pointer-events-none">
+                <img src="{{ asset('mockup_assets/boy_running.png') }}" 
+                     alt="Active Student Running" 
+                     class="w-20 sm:w-28 h-auto drop-shadow-sm select-none">
+            </div>
+
+            <!-- Centered Section Title with Pink Wave Underline -->
+            <div class="text-center">
                 <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black font-heading text-brand-navy tracking-tight select-none">
                     WHY THE MANTHAN SCHOOL
                 </h2>
-                <!-- Pink wave underline -->
-                <div class="w-24 h-1.5 bg-brand-pink rounded-full mt-1"></div>
+                <div class="w-28 h-1.5 bg-brand-pink rounded-full mx-auto mt-2"></div>
             </div>
         </div>
 
@@ -142,7 +146,7 @@
                     LEARNING FOR <br>
                     HOLISTIC GROWTH
                 </h3>
-                <p class="text-sm sm:text-base text-slate-600 leading-relaxed font-sans">
+                <p class="text-sm sm:text-base text-slate-600 leading-relaxed font-sans max-w-md">
                     Experiential, competency based learning that builds curiosity, confidence and strong values, in a safe campus with experienced educators.
                 </p>
                 <div class="pt-2">
@@ -153,12 +157,12 @@
                 </div>
             </div>
 
-            <!-- Right Visual Illustration with Kids & Doodles -->
+            <!-- Right Visual Illustration with Kids & Doodles (from Screenshot 10) -->
             <div class="lg:col-span-7 flex justify-center lg:justify-end">
                 <div class="relative w-full max-w-xl">
                     <img src="{{ asset('mockup_assets/kids_drawing_full.png') }}" 
                          alt="Experiential Learning at Manthan School" 
-                         class="w-full h-auto drop-shadow-md select-none">
+                         class="w-full h-auto drop-shadow-md select-none rounded-2xl">
                 </div>
             </div>
 
@@ -721,19 +725,21 @@
 <!-- ============================================================== -->
 <section id="safe" class="bg-white py-16 lg:py-20 relative">
     
-    <!-- Jumping 3D Girl Avatar positioned on top of the section from Screenshot 2 -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div class="flex justify-center -mt-24 sm:-mt-28 mb-4 pointer-events-none">
-            <img src="{{ asset('mockup_assets/girl_jumping.png') }}" 
-                 alt="Joyful Girl Jumping" 
-                 class="w-28 sm:w-36 h-auto drop-shadow-md select-none">
-        </div>
+        <!-- Jumping 3D Girl Avatar on Top Left of Cloud (from Screenshot 2) -->
+        <div class="relative mb-14">
+            <div class="absolute left-4 sm:left-16 -top-20 sm:-top-28 pointer-events-none">
+                <img src="{{ asset('mockup_assets/girl_jumping.png') }}" 
+                     alt="Joyful Girl Jumping" 
+                     class="w-24 sm:w-32 h-auto drop-shadow-md select-none">
+            </div>
 
-        <div class="text-center max-w-xl mx-auto mb-14">
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading text-brand-navy tracking-tight select-none">
-                HOW WE KEEP <br>
-                YOUR CHILD SAFE
-            </h2>
+            <div class="text-center max-w-xl mx-auto">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading text-brand-navy tracking-tight select-none">
+                    HOW WE KEEP <br>
+                    YOUR CHILD SAFE
+                </h2>
+            </div>
         </div>
 
         <!-- 8 Grid Cards (4x2) Matching Exact Icons & Text from Screenshot 2 -->
