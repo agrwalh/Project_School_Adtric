@@ -1229,8 +1229,8 @@
                     <!-- User Friendly Alert Box -->
                     <div id="enquiry-alert" class="hidden mb-4 p-4 rounded-xl text-xs font-semibold"></div>
 
-                    <!-- AJAX Form -->
-                    <form id="admission-enquiry-form" method="POST" action="{{ route('admission-enquiry.store') }}" class="space-y-4">
+                    <!-- AJAX Form with custom inline validations (novalidate prevents default browser popup) -->
+                    <form id="admission-enquiry-form" method="POST" action="{{ route('admission-enquiry.store') }}" novalidate class="space-y-4">
                         @csrf
                         
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -1241,25 +1241,26 @@
                                        name="parent_name" 
                                        id="parent_name" 
                                        placeholder="e.g. Rahul Sharma"
-                                       required
-                                       class="w-full px-3.5 py-2.5 text-xs rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-pink/50 focus:border-brand-pink">
-                                <p class="error-text text-[11px] text-red-600 mt-1 hidden" data-error-for="parent_name"></p>
+                                       class="w-full px-3.5 py-2.5 text-xs rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-pink/50 focus:border-brand-pink transition">
+                                <p class="error-text text-[11px] text-red-600 mt-1 hidden font-medium" data-error-for="parent_name"></p>
                             </div>
 
-                            <!-- Mobile Number -->
+                            <!-- Mobile Number (Strict 10-digit numeric only) -->
                             <div>
                                 <label for="mobile" class="block text-[11px] font-bold text-slate-700 mb-1">Mobile Number <span class="text-brand-pink">*</span></label>
-                                <div class="flex">
-                                    <span class="inline-flex items-center px-3 text-xs bg-slate-100 border border-r-0 border-slate-300 rounded-l-xl text-slate-600 font-semibold">+91</span>
+                                <div class="flex" id="mobile-input-container">
+                                    <span class="inline-flex items-center px-3 text-xs bg-slate-100 border border-r-0 border-slate-300 rounded-l-xl text-slate-600 font-semibold select-none">+91</span>
                                     <input type="tel" 
                                            name="mobile" 
                                            id="mobile" 
-                                           placeholder="10-digit number"
+                                           placeholder="10-digit Indian number"
                                            maxlength="10"
-                                           required
-                                           class="w-full px-3.5 py-2.5 text-xs rounded-r-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-pink/50 focus:border-brand-pink">
+                                           inputmode="numeric"
+                                           pattern="[6-9][0-9]{9}"
+                                           oninput="this.value = this.value.replace(/[^0-9]/g, '').slice(0, 10);"
+                                           class="w-full px-3.5 py-2.5 text-xs rounded-r-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-pink/50 focus:border-brand-pink transition">
                                 </div>
-                                <p class="error-text text-[11px] text-red-600 mt-1 hidden" data-error-for="mobile"></p>
+                                <p class="error-text text-[11px] text-red-600 mt-1 hidden font-medium" data-error-for="mobile"></p>
                             </div>
                         </div>
 
@@ -1271,8 +1272,8 @@
                                        name="email" 
                                        id="email" 
                                        placeholder="parent@example.com"
-                                       class="w-full px-3.5 py-2.5 text-xs rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-pink/50 focus:border-brand-pink">
-                                <p class="error-text text-[11px] text-red-600 mt-1 hidden" data-error-for="email"></p>
+                                       class="w-full px-3.5 py-2.5 text-xs rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-pink/50 focus:border-brand-pink transition">
+                                <p class="error-text text-[11px] text-red-600 mt-1 hidden font-medium" data-error-for="email"></p>
                             </div>
 
                             <!-- Student / Child's Name -->
@@ -1282,9 +1283,8 @@
                                        name="student_name" 
                                        id="student_name" 
                                        placeholder="e.g. Aarav Sharma"
-                                       required
-                                       class="w-full px-3.5 py-2.5 text-xs rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-pink/50 focus:border-brand-pink">
-                                <p class="error-text text-[11px] text-red-600 mt-1 hidden" data-error-for="student_name"></p>
+                                       class="w-full px-3.5 py-2.5 text-xs rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-pink/50 focus:border-brand-pink transition">
+                                <p class="error-text text-[11px] text-red-600 mt-1 hidden font-medium" data-error-for="student_name"></p>
                             </div>
                         </div>
 
@@ -1293,8 +1293,7 @@
                             <label for="class_applying_for" class="block text-[11px] font-bold text-slate-700 mb-1">Programme of Interest <span class="text-brand-pink">*</span></label>
                             <select name="class_applying_for" 
                                     id="class_applying_for" 
-                                    required
-                                    class="w-full px-3.5 py-2.5 text-xs rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-pink/50 focus:border-brand-pink bg-white">
+                                    class="w-full px-3.5 py-2.5 text-xs rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-pink/50 focus:border-brand-pink bg-white transition">
                                 <option value="" disabled selected>Select child's stage</option>
                                 <option value="Toddlers">Toddlers (Cuddle Bugs | 1.5 - 2.5 yrs)</option>
                                 <option value="Pre-Nursery">Pre-Nursery (Hatchlings | 2.5 - 3.5 yrs)</option>
@@ -1303,7 +1302,7 @@
                                 <option value="Grade 1">Grade 1 (5.5 - 6.5 yrs)</option>
                                 <option value="Grade 2">Grade 2 (6.5 - 7.5 yrs)</option>
                             </select>
-                            <p class="error-text text-[11px] text-red-600 mt-1 hidden" data-error-for="class_applying_for"></p>
+                            <p class="error-text text-[11px] text-red-600 mt-1 hidden font-medium" data-error-for="class_applying_for"></p>
                         </div>
 
                         <!-- Optional Message -->
@@ -1313,16 +1312,17 @@
                                       id="message" 
                                       rows="2" 
                                       placeholder="Any special interests, food allergies or query..."
-                                      class="w-full px-3.5 py-2.5 text-xs rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-pink/50 focus:border-brand-pink"></textarea>
+                                      class="w-full px-3.5 py-2.5 text-xs rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-pink/50 focus:border-brand-pink transition"></textarea>
                         </div>
 
                         <!-- Consent Checkbox -->
                         <div class="flex items-start space-x-2 pt-1">
-                            <input type="checkbox" id="consent" required checked class="mt-0.5 rounded text-brand-pink focus:ring-brand-pink">
+                            <input type="checkbox" id="consent" checked class="mt-0.5 rounded text-brand-pink focus:ring-brand-pink">
                             <label for="consent" class="text-[11px] text-slate-600 leading-tight">
                                 I agree to be contacted about admissions at the Noida campus.
                             </label>
                         </div>
+                        <p class="error-text text-[11px] text-red-600 hidden font-medium" data-error-for="consent"></p>
 
                         <!-- Submit Button -->
                         <div class="pt-2">
@@ -1631,14 +1631,54 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // -------------------------------------------------------------
-    // Admission Enquiry AJAX Form Submission
+    // Admission Enquiry AJAX Form Submission & Inline Validations
     // -------------------------------------------------------------
     const enquiryForm = document.getElementById('admission-enquiry-form');
     const alertBox = document.getElementById('enquiry-alert');
     const submitBtn = document.getElementById('enquiry-submit-btn');
     const spinner = document.getElementById('enquiry-spinner');
 
+    // Helper: Show custom inline error for a field
+    function showFieldError(field, message) {
+        const inputEl = document.getElementById(field);
+        const errEl = document.querySelector(`.error-text[data-error-for="${field}"]`);
+        
+        if (inputEl) {
+            inputEl.classList.remove('border-slate-300', 'focus:ring-brand-pink/50', 'focus:border-brand-pink');
+            inputEl.classList.add('border-red-500', 'bg-red-50/30', 'focus:ring-red-400', 'focus:border-red-500');
+        }
+        if (errEl) {
+            errEl.textContent = message;
+            errEl.classList.remove('hidden');
+        }
+    }
+
+    // Helper: Clear inline error for a field
+    function clearFieldError(field) {
+        const inputEl = document.getElementById(field);
+        const errEl = document.querySelector(`.error-text[data-error-for="${field}"]`);
+        
+        if (inputEl) {
+            inputEl.classList.remove('border-red-500', 'bg-red-50/30', 'focus:ring-red-400', 'focus:border-red-500');
+            inputEl.classList.add('border-slate-300', 'focus:ring-brand-pink/50', 'focus:border-brand-pink');
+        }
+        if (errEl) {
+            errEl.textContent = '';
+            errEl.classList.add('hidden');
+        }
+    }
+
+    // Attach real-time clear listeners to all inputs
     if (enquiryForm) {
+        const fieldsToTrack = ['parent_name', 'mobile', 'email', 'student_name', 'class_applying_for', 'consent'];
+        fieldsToTrack.forEach(field => {
+            const el = document.getElementById(field);
+            if (el) {
+                el.addEventListener('input', () => clearFieldError(field));
+                el.addEventListener('change', () => clearFieldError(field));
+            }
+        });
+
         enquiryForm.addEventListener('submit', async function (e) {
             e.preventDefault();
 
@@ -1646,12 +1686,96 @@ document.addEventListener('DOMContentLoaded', function () {
             alertBox.classList.add('hidden');
             alertBox.className = 'hidden mb-4 p-4 rounded-xl text-xs font-semibold';
             alertBox.textContent = '';
-            document.querySelectorAll('.error-text').forEach(el => {
-                el.classList.add('hidden');
-                el.textContent = '';
-            });
+            fieldsToTrack.forEach(clearFieldError);
 
-            // Loading state
+            // ---------------------------------------------------------
+            // Client-Side Validation
+            // ---------------------------------------------------------
+            let isValid = true;
+            let firstInvalidEl = null;
+
+            // 1. Parent Name
+            const parentNameEl = document.getElementById('parent_name');
+            const parentNameVal = parentNameEl.value.trim();
+            if (!parentNameVal) {
+                showFieldError('parent_name', 'Parent or guardian name is required.');
+                isValid = false;
+                if (!firstInvalidEl) firstInvalidEl = parentNameEl;
+            } else if (parentNameVal.length < 2) {
+                showFieldError('parent_name', 'Name must contain at least 2 characters.');
+                isValid = false;
+                if (!firstInvalidEl) firstInvalidEl = parentNameEl;
+            }
+
+            // 2. Mobile Number (Strict Indian 10-digit regex /^[6-9]\d{9}$/)
+            const mobileEl = document.getElementById('mobile');
+            const mobileVal = mobileEl.value.trim();
+            const indianMobilePattern = /^[6-9]\d{9}$/;
+            if (!mobileVal) {
+                showFieldError('mobile', 'Mobile number is required.');
+                isValid = false;
+                if (!firstInvalidEl) firstInvalidEl = mobileEl;
+            } else if (!indianMobilePattern.test(mobileVal)) {
+                showFieldError('mobile', 'Enter a valid 10-digit Indian mobile number (starts with 6, 7, 8, or 9).');
+                isValid = false;
+                if (!firstInvalidEl) firstInvalidEl = mobileEl;
+            }
+
+            // 3. Child's / Student Name
+            const studentNameEl = document.getElementById('student_name');
+            const studentNameVal = studentNameEl.value.trim();
+            if (!studentNameVal) {
+                showFieldError('student_name', "Child's name is required.");
+                isValid = false;
+                if (!firstInvalidEl) firstInvalidEl = studentNameEl;
+            } else if (studentNameVal.length < 2) {
+                showFieldError('student_name', "Child's name must contain at least 2 characters.");
+                isValid = false;
+                if (!firstInvalidEl) firstInvalidEl = studentNameEl;
+            }
+
+            // 4. Programme / Class Applying For
+            const classEl = document.getElementById('class_applying_for');
+            if (!classEl.value) {
+                showFieldError('class_applying_for', 'Please select a programme / stage of interest.');
+                isValid = false;
+                if (!firstInvalidEl) firstInvalidEl = classEl;
+            }
+
+            // 5. Email (Optional, but if present must be valid)
+            const emailEl = document.getElementById('email');
+            const emailVal = emailEl.value.trim();
+            if (emailVal) {
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailPattern.test(emailVal)) {
+                    showFieldError('email', 'Please enter a valid email address (e.g. parent@example.com).');
+                    isValid = false;
+                    if (!firstInvalidEl) firstInvalidEl = emailEl;
+                }
+            }
+
+            // 6. Consent Checkbox
+            const consentEl = document.getElementById('consent');
+            if (consentEl && !consentEl.checked) {
+                showFieldError('consent', 'Please check this box to agree to be contacted.');
+                isValid = false;
+                if (!firstInvalidEl) firstInvalidEl = consentEl;
+            }
+
+            // If client-side validation failed, highlight and halt
+            if (!isValid) {
+                alertBox.textContent = 'Please fill in all highlighted fields correctly.';
+                alertBox.className = 'mb-4 p-3.5 rounded-xl text-xs font-semibold bg-rose-50 text-rose-800 border border-rose-300 block shadow-sm';
+                if (firstInvalidEl) {
+                    firstInvalidEl.focus();
+                    firstInvalidEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+                return;
+            }
+
+            // ---------------------------------------------------------
+            // AJAX Submit to Laravel Backend
+            // ---------------------------------------------------------
             submitBtn.disabled = true;
             spinner.classList.remove('hidden');
 
@@ -1674,30 +1798,33 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (response.ok && result.success) {
                     // Success alert
                     alertBox.textContent = result.message || 'Thank you! Your enquiry has been received. Our team will contact you shortly.';
-                    alertBox.className = 'mb-4 p-4 rounded-xl text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-300 block';
+                    alertBox.className = 'mb-4 p-4 rounded-xl text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-300 block shadow-sm';
                     enquiryForm.reset();
+                    // Scroll to alert
+                    alertBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                } else if (result.duplicate) {
+                    // 24-hour deduplication alert
+                    alertBox.textContent = result.message || 'We have already received your enquiry. Our team is currently reviewing it.';
+                    alertBox.className = 'mb-4 p-4 rounded-xl text-xs font-semibold bg-amber-50 text-amber-900 border border-amber-300 block shadow-sm';
+                    alertBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
                 } else if (response.status === 422) {
-                    // Validation or 24-hour deduplication error
+                    // Backend Validation Errors
                     if (result.errors) {
                         for (const [field, messages] of Object.entries(result.errors)) {
-                            const errEl = document.querySelector(`.error-text[data-error-for="${field}"]`);
-                            if (errEl) {
-                                errEl.textContent = messages[0];
-                                errEl.classList.remove('hidden');
-                            }
+                            showFieldError(field, messages[0]);
                         }
                     }
 
                     alertBox.textContent = result.message || 'Please correct the highlighted errors.';
-                    alertBox.className = 'mb-4 p-4 rounded-xl text-xs font-semibold bg-amber-50 text-amber-900 border border-amber-300 block';
+                    alertBox.className = 'mb-4 p-4 rounded-xl text-xs font-semibold bg-rose-50 text-rose-800 border border-rose-300 block shadow-sm';
                 } else {
                     // General server error
                     alertBox.textContent = result.message || 'Something went wrong. Please try again or call our admissions desk.';
-                    alertBox.className = 'mb-4 p-4 rounded-xl text-xs font-semibold bg-rose-50 text-rose-800 border border-rose-300 block';
+                    alertBox.className = 'mb-4 p-4 rounded-xl text-xs font-semibold bg-rose-50 text-rose-800 border border-rose-300 block shadow-sm';
                 }
             } catch (err) {
                 alertBox.textContent = 'Network error. Please check your connection and try again.';
-                alertBox.className = 'mb-4 p-4 rounded-xl text-xs font-semibold bg-rose-50 text-rose-800 border border-rose-300 block';
+                alertBox.className = 'mb-4 p-4 rounded-xl text-xs font-semibold bg-rose-50 text-rose-800 border border-rose-300 block shadow-sm';
             } finally {
                 submitBtn.disabled = false;
                 spinner.classList.add('hidden');
