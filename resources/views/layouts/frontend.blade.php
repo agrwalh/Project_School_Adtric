@@ -156,10 +156,10 @@
 
         <!-- 3D Boy Writing (Left) & 3D Girl Reading (Right) on Footer Top Wave -->
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative pointer-events-none">
-            <img src="{{ asset('mockup_assets/footer_boy.png') }}" 
+            <img src="{{ asset('images/footer_boy.png') }}" 
                  alt="Boy writing" 
                  class="absolute -top-24 sm:-top-28 left-4 sm:left-12 w-28 sm:w-36 h-auto z-20 drop-shadow-md">
-            <img src="{{ asset('mockup_assets/footer_girl.png') }}" 
+            <img src="{{ asset('images/footer_girl.png') }}" 
                  alt="Girl reading" 
                  class="absolute -top-24 sm:-top-28 right-4 sm:right-12 w-28 sm:w-36 h-auto z-20 drop-shadow-md">
         </div>

@@ -31,7 +31,7 @@
 <section class="relative bg-brand-navy min-h-[560px] lg:min-h-[640px] flex items-center overflow-hidden">
     <!-- Hero Background Image (Children on yellow car) -->
     <div class="absolute inset-0 z-0">
-        <img src="{{ asset('mockup_assets/hero_photo.jpg') }}" 
+        <img src="{{ asset('images/hero_photo.jpg') }}" 
              alt="The Manthan School Children" 
              class="w-full h-full object-cover object-center filter brightness-95">
         <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
@@ -102,7 +102,7 @@
 
             <div class="relative">
                 <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20 transform rotate-1 hover:rotate-0 transition duration-300">
-                    <img src="{{ asset('mockup_assets/drums_photo.jpg') }}" 
+                    <img src="{{ asset('images/drums_photo.jpg') }}" 
                          alt="Children playing drums at Manthan School" 
                          class="w-full h-auto object-cover">
                 </div>
@@ -123,7 +123,7 @@
         <div class="relative flex items-center justify-center mb-10 min-h-[80px]">
             <!-- Running 3D Boy on the Left (from Screenshot 10) -->
             <div class="absolute left-0 top-0 pointer-events-none">
-                <img src="{{ asset('mockup_assets/boy_running.png') }}" 
+                <img src="{{ asset('images/boy_running.png') }}" 
                      alt="Active Student Running" 
                      class="w-20 sm:w-28 h-auto drop-shadow-sm select-none">
             </div>
@@ -160,7 +160,7 @@
             <!-- Right Visual Illustration with Kids & Doodles (from Screenshot 10) -->
             <div class="lg:col-span-7 flex justify-center lg:justify-end">
                 <div class="relative w-full max-w-xl">
-                    <img src="{{ asset('mockup_assets/kids_drawing_full.png') }}" 
+                    <img src="{{ asset('images/kids_drawing_full.png') }}" 
                          alt="Experiential Learning at Manthan School" 
                          class="w-full h-auto drop-shadow-md select-none rounded-2xl">
                 </div>
@@ -196,7 +196,7 @@
             <div class="w-[300px] sm:w-[320px] bg-[#fef8f0] text-slate-800 p-5 rounded-3xl shadow-lg flex flex-col justify-between flex-shrink-0 transition transform hover:-translate-y-2 hover:shadow-2xl duration-300">
                 <div>
                     <div class="h-48 rounded-2xl overflow-hidden mb-4 bg-slate-200 shadow-inner">
-                        <img src="{{ asset('mockup_assets/stage_toddlers.jpg') }}" alt="Toddlers" class="w-full h-full object-cover">
+                        <img src="{{ asset('images/stage_toddlers.jpg') }}" alt="Toddlers" class="w-full h-full object-cover">
                     </div>
                     <div class="flex items-center justify-between">
                         <h3 class="font-heading font-black text-xl text-brand-navy">Toddlers</h3>
@@ -218,7 +218,7 @@
             <div class="w-[300px] sm:w-[320px] bg-[#fef8f0] text-slate-800 p-5 rounded-3xl shadow-lg flex flex-col justify-between flex-shrink-0 transition transform hover:-translate-y-2 hover:shadow-2xl duration-300">
                 <div>
                     <div class="h-48 rounded-2xl overflow-hidden mb-4 bg-slate-200 shadow-inner">
-                        <img src="{{ asset('mockup_assets/stage_prenursery.jpg') }}" alt="Pre-Nursery" class="w-full h-full object-cover">
+                        <img src="{{ asset('images/stage_prenursery.jpg') }}" alt="Pre-Nursery" class="w-full h-full object-cover">
                     </div>
                     <div class="flex items-center justify-between">
                         <h3 class="font-heading font-black text-xl text-brand-navy">Pre-Nursery</h3>
@@ -240,7 +240,7 @@
             <div class="w-[300px] sm:w-[320px] bg-[#fef8f0] text-slate-800 p-5 rounded-3xl shadow-lg flex flex-col justify-between flex-shrink-0 transition transform hover:-translate-y-2 hover:shadow-2xl duration-300">
                 <div>
                     <div class="h-48 rounded-2xl overflow-hidden mb-4 bg-slate-200 shadow-inner">
-                        <img src="{{ asset('mockup_assets/stage_nursery.jpg') }}" alt="Nursery" class="w-full h-full object-cover">
+                        <img src="{{ asset('images/stage_nursery.jpg') }}" alt="Nursery" class="w-full h-full object-cover">
                     </div>
                     <div class="flex items-center justify-between">
                         <h3 class="font-heading font-black text-xl text-brand-navy">Nursery</h3>
@@ -262,7 +262,7 @@
             <div class="w-[300px] sm:w-[320px] bg-[#fef8f0] text-slate-800 p-5 rounded-3xl shadow-lg flex flex-col justify-between flex-shrink-0 transition transform hover:-translate-y-2 hover:shadow-2xl duration-300">
                 <div>
                     <div class="h-48 rounded-2xl overflow-hidden mb-4 bg-slate-200 shadow-inner">
-                        <img src="{{ asset('mockup_assets/stage_kindergarten.jpg') }}" alt="Kindergarten" class="w-full h-full object-cover">
+                        <img src="{{ asset('images/stage_kindergarten.jpg') }}" alt="Kindergarten" class="w-full h-full object-cover">
                     </div>
                     <div class="flex items-center justify-between">
                         <h3 class="font-heading font-black text-xl text-brand-navy">Kindergarten</h3>
@@ -284,7 +284,7 @@
             <div class="w-[300px] sm:w-[320px] bg-[#fef8f0] text-slate-800 p-5 rounded-3xl shadow-lg flex flex-col justify-between flex-shrink-0 transition transform hover:-translate-y-2 hover:shadow-2xl duration-300">
                 <div>
                     <div class="h-48 rounded-2xl overflow-hidden mb-4 bg-slate-200 shadow-inner">
-                        <img src="{{ asset('mockup_assets/stage_grade1.jpg') }}" alt="Grade 1" class="w-full h-full object-cover">
+                        <img src="{{ asset('images/stage_grade1.jpg') }}" alt="Grade 1" class="w-full h-full object-cover">
                     </div>
                     <div class="flex items-center justify-between">
                         <h3 class="font-heading font-black text-xl text-brand-navy">Grade 1</h3>
@@ -306,7 +306,7 @@
             <div class="w-[300px] sm:w-[320px] bg-[#fef8f0] text-slate-800 p-5 rounded-3xl shadow-lg flex flex-col justify-between flex-shrink-0 transition transform hover:-translate-y-2 hover:shadow-2xl duration-300">
                 <div>
                     <div class="h-48 rounded-2xl overflow-hidden mb-4 bg-slate-200 shadow-inner">
-                        <img src="{{ asset('mockup_assets/stage_grade2.jpg') }}" alt="Grade 2" class="w-full h-full object-cover">
+                        <img src="{{ asset('images/stage_grade2.jpg') }}" alt="Grade 2" class="w-full h-full object-cover">
                     </div>
                     <div class="flex items-center justify-between">
                         <h3 class="font-heading font-black text-xl text-brand-navy">Grade 2</h3>
@@ -391,7 +391,7 @@
             <!-- Period 1: 08:30 -->
             <div class="w-[320px] sm:w-[350px] flex-shrink-0 group bg-brand-navy-light/40 border border-white/10 hover:border-cyan-400/40 p-4 rounded-3xl transition duration-300 hover:-translate-y-1.5 shadow-lg">
                 <div class="h-52 rounded-2xl overflow-hidden mb-4 bg-slate-800">
-                    <img src="{{ asset('mockup_assets/day_1.jpg') }}" alt="Arrival" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    <img src="{{ asset('images/day_1.jpg') }}" alt="Arrival" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
                 </div>
                 <span class="text-cyan-400 text-xs font-bold font-mono">08:30</span>
                 <h3 class="font-heading font-black text-lg text-white mt-1 mb-1">Arrival and circle time</h3>
@@ -403,7 +403,7 @@
             <!-- Period 2: 09:00 -->
             <div class="w-[320px] sm:w-[350px] flex-shrink-0 group bg-brand-navy-light/40 border border-white/10 hover:border-cyan-400/40 p-4 rounded-3xl transition duration-300 hover:-translate-y-1.5 shadow-lg">
                 <div class="h-52 rounded-2xl overflow-hidden mb-4 bg-slate-800">
-                    <img src="{{ asset('mockup_assets/day_2.jpg') }}" alt="Free Play" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    <img src="{{ asset('images/day_2.jpg') }}" alt="Free Play" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
                 </div>
                 <span class="text-cyan-400 text-xs font-bold font-mono">09:00</span>
                 <h3 class="font-heading font-black text-lg text-white mt-1 mb-1">Free play</h3>
@@ -415,7 +415,7 @@
             <!-- Period 3: 09:45 -->
             <div class="w-[320px] sm:w-[350px] flex-shrink-0 group bg-brand-navy-light/40 border border-white/10 hover:border-cyan-400/40 p-4 rounded-3xl transition duration-300 hover:-translate-y-1.5 shadow-lg">
                 <div class="h-52 rounded-2xl overflow-hidden mb-4 bg-slate-800">
-                    <img src="{{ asset('mockup_assets/day_3.jpg') }}" alt="Guided Learning" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    <img src="{{ asset('images/day_3.jpg') }}" alt="Guided Learning" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
                 </div>
                 <span class="text-cyan-400 text-xs font-bold font-mono">09:45</span>
                 <h3 class="font-heading font-black text-lg text-white mt-1 mb-1">Guided learning</h3>
@@ -427,7 +427,7 @@
             <!-- Period 4: 10:30 -->
             <div class="w-[320px] sm:w-[350px] flex-shrink-0 group bg-brand-navy-light/40 border border-white/10 hover:border-cyan-400/40 p-4 rounded-3xl transition duration-300 hover:-translate-y-1.5 shadow-lg">
                 <div class="h-52 rounded-2xl overflow-hidden mb-4 bg-slate-800">
-                    <img src="{{ asset('mockup_assets/day_4.jpg') }}" alt="Snack Time" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    <img src="{{ asset('images/day_4.jpg') }}" alt="Snack Time" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
                 </div>
                 <span class="text-cyan-400 text-xs font-bold font-mono">10:30</span>
                 <h3 class="font-heading font-black text-lg text-white mt-1 mb-1">Snack & hydration break</h3>
@@ -439,7 +439,7 @@
             <!-- Period 5: 11:15 -->
             <div class="w-[320px] sm:w-[350px] flex-shrink-0 group bg-brand-navy-light/40 border border-white/10 hover:border-cyan-400/40 p-4 rounded-3xl transition duration-300 hover:-translate-y-1.5 shadow-lg">
                 <div class="h-52 rounded-2xl overflow-hidden mb-4 bg-slate-800">
-                    <img src="{{ asset('mockup_assets/day_5.jpg') }}" alt="Outdoor Play" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    <img src="{{ asset('images/day_5.jpg') }}" alt="Outdoor Play" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
                 </div>
                 <span class="text-cyan-400 text-xs font-bold font-mono">11:15</span>
                 <h3 class="font-heading font-black text-lg text-white mt-1 mb-1">Motor skills & play</h3>
@@ -451,7 +451,7 @@
             <!-- Period 6: 12:00 -->
             <div class="w-[320px] sm:w-[350px] flex-shrink-0 group bg-brand-navy-light/40 border border-white/10 hover:border-cyan-400/40 p-4 rounded-3xl transition duration-300 hover:-translate-y-1.5 shadow-lg">
                 <div class="h-52 rounded-2xl overflow-hidden mb-4 bg-slate-800">
-                    <img src="{{ asset('mockup_assets/day_6.jpg') }}" alt="Storytelling" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    <img src="{{ asset('images/day_6.jpg') }}" alt="Storytelling" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
                 </div>
                 <span class="text-cyan-400 text-xs font-bold font-mono">12:00</span>
                 <h3 class="font-heading font-black text-lg text-white mt-1 mb-1">Story & creative arts</h3>
@@ -463,7 +463,7 @@
             <!-- Period 7: 12:45 -->
             <div class="w-[320px] sm:w-[350px] flex-shrink-0 group bg-brand-navy-light/40 border border-white/10 hover:border-cyan-400/40 p-4 rounded-3xl transition duration-300 hover:-translate-y-1.5 shadow-lg">
                 <div class="h-52 rounded-2xl overflow-hidden mb-4 bg-slate-800">
-                    <img src="{{ asset('mockup_assets/day_7.jpg') }}" alt="Reflection" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                    <img src="{{ asset('images/day_7.jpg') }}" alt="Reflection" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
                 </div>
                 <span class="text-cyan-400 text-xs font-bold font-mono">12:45</span>
                 <h3 class="font-heading font-black text-lg text-white mt-1 mb-1">Circle reflection</h3>
@@ -525,7 +525,7 @@
             
             <!-- Classrooms -->
             <div class="group relative rounded-3xl overflow-hidden shadow-md bg-slate-900 h-64">
-                <img src="{{ asset('mockup_assets/room_classroom.jpg') }}" alt="Classrooms" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-95">
+                <img src="{{ asset('images/room_classroom.jpg') }}" alt="Classrooms" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-95">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-5">
                     <h3 class="text-white font-heading font-black text-lg">Classrooms</h3>
                 </div>
@@ -533,7 +533,7 @@
 
             <!-- Activity & Art Room -->
             <div class="group relative rounded-3xl overflow-hidden shadow-md bg-slate-900 h-64">
-                <img src="{{ asset('mockup_assets/room_activity.jpg') }}" alt="Activity and art room" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-95">
+                <img src="{{ asset('images/room_activity.jpg') }}" alt="Activity and art room" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-95">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-5">
                     <h3 class="text-white font-heading font-black text-lg">Activity and art room</h3>
                 </div>
@@ -541,7 +541,7 @@
 
             <!-- Library Corner -->
             <div class="group relative rounded-3xl overflow-hidden shadow-md bg-slate-900 h-64">
-                <img src="{{ asset('mockup_assets/room_library.jpg') }}" alt="Library corner" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-95">
+                <img src="{{ asset('images/room_library.jpg') }}" alt="Library corner" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-95">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-5">
                     <h3 class="text-white font-heading font-black text-lg">Library corner</h3>
                 </div>
@@ -549,7 +549,7 @@
 
             <!-- Indoor Play Area -->
             <div class="group relative rounded-3xl overflow-hidden shadow-md bg-slate-900 h-64">
-                <img src="{{ asset('mockup_assets/room_indoor.jpg') }}" alt="Indoor play area" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-95">
+                <img src="{{ asset('images/room_indoor.jpg') }}" alt="Indoor play area" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-95">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-5">
                     <h3 class="text-white font-heading font-black text-lg">Indoor play area</h3>
                 </div>
@@ -557,7 +557,7 @@
 
             <!-- Outdoor Play Area (Span 2 on lg) -->
             <div class="lg:col-span-2 group relative rounded-3xl overflow-hidden shadow-md bg-slate-900 h-64">
-                <img src="{{ asset('mockup_assets/room_outdoor.jpg') }}" alt="Outdoor play area" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-95">
+                <img src="{{ asset('images/room_outdoor.jpg') }}" alt="Outdoor play area" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-95">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-5">
                     <h3 class="text-white font-heading font-black text-lg">Outdoor play area</h3>
                 </div>
@@ -565,7 +565,7 @@
 
             <!-- Care Room and Washrooms (Span 2 on lg) -->
             <div class="lg:col-span-2 group relative rounded-3xl overflow-hidden shadow-md bg-slate-900 h-64">
-                <img src="{{ asset('mockup_assets/room_care.jpg') }}" alt="Care room and washrooms" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-95">
+                <img src="{{ asset('images/room_care.jpg') }}" alt="Care room and washrooms" class="w-full h-full object-cover group-hover:scale-105 transition duration-500 opacity-95">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end p-5">
                     <h3 class="text-white font-heading font-black text-lg">Care room and washrooms</h3>
                 </div>
@@ -602,7 +602,7 @@
             <div class="w-[300px] sm:w-[320px] bg-[#fef8f0] text-slate-800 p-5 rounded-3xl shadow-lg flex-shrink-0 transition transform hover:-translate-y-2 hover:shadow-2xl duration-300 flex flex-col justify-between">
                 <div>
                     <div class="h-44 rounded-2xl overflow-hidden mb-4 bg-slate-200">
-                        <img src="{{ asset('mockup_assets/prog_1.jpg') }}" alt="Around the World" class="w-full h-full object-cover">
+                        <img src="{{ asset('images/prog_1.jpg') }}" alt="Around the World" class="w-full h-full object-cover">
                     </div>
                     <h3 class="font-heading font-black text-base uppercase text-brand-navy mb-2">AROUND THE WORLD IN 365 DAYS</h3>
                     <p class="text-xs text-slate-600 leading-relaxed font-sans">
@@ -615,7 +615,7 @@
             <div class="w-[300px] sm:w-[320px] bg-[#fef8f0] text-slate-800 p-5 rounded-3xl shadow-lg flex-shrink-0 transition transform hover:-translate-y-2 hover:shadow-2xl duration-300 flex flex-col justify-between">
                 <div>
                     <div class="h-44 rounded-2xl overflow-hidden mb-4 bg-slate-200">
-                        <img src="{{ asset('mockup_assets/prog_2.jpg') }}" alt="The Shin Programme" class="w-full h-full object-cover">
+                        <img src="{{ asset('images/prog_2.jpg') }}" alt="The Shin Programme" class="w-full h-full object-cover">
                     </div>
                     <h3 class="font-heading font-black text-base uppercase text-brand-navy mb-2">THE SHIN PROGRAMME</h3>
                     <p class="text-xs text-slate-600 leading-relaxed font-sans">
@@ -628,7 +628,7 @@
             <div class="w-[300px] sm:w-[320px] bg-[#fef8f0] text-slate-800 p-5 rounded-3xl shadow-lg flex-shrink-0 transition transform hover:-translate-y-2 hover:shadow-2xl duration-300 flex flex-col justify-between">
                 <div>
                     <div class="h-44 rounded-2xl overflow-hidden mb-4 bg-slate-200">
-                        <img src="{{ asset('mockup_assets/prog_3.jpg') }}" alt="Cambridge English" class="w-full h-full object-cover">
+                        <img src="{{ asset('images/prog_3.jpg') }}" alt="Cambridge English" class="w-full h-full object-cover">
                     </div>
                     <h3 class="font-heading font-black text-base uppercase text-brand-navy mb-2">CAMBRIDGE ENGLISH</h3>
                     <p class="text-xs text-slate-600 leading-relaxed font-sans">
@@ -641,7 +641,7 @@
             <div class="w-[300px] sm:w-[320px] bg-[#fef8f0] text-slate-800 p-5 rounded-3xl shadow-lg flex-shrink-0 transition transform hover:-translate-y-2 hover:shadow-2xl duration-300 flex flex-col justify-between">
                 <div>
                     <div class="h-44 rounded-2xl overflow-hidden mb-4 bg-slate-200">
-                        <img src="{{ asset('mockup_assets/prog_4.jpg') }}" alt="Robotics" class="w-full h-full object-cover">
+                        <img src="{{ asset('images/prog_4.jpg') }}" alt="Robotics" class="w-full h-full object-cover">
                     </div>
                     <h3 class="font-heading font-black text-base uppercase text-brand-navy mb-2">ROBOTICS & STEM</h3>
                     <p class="text-xs text-slate-600 leading-relaxed font-sans">
@@ -654,7 +654,7 @@
             <div class="w-[300px] sm:w-[320px] bg-[#fef8f0] text-slate-800 p-5 rounded-3xl shadow-lg flex-shrink-0 transition transform hover:-translate-y-2 hover:shadow-2xl duration-300 flex flex-col justify-between">
                 <div>
                     <div class="h-44 rounded-2xl overflow-hidden mb-4 bg-slate-200">
-                        <img src="{{ asset('mockup_assets/prog_5.jpg') }}" alt="Abacus" class="w-full h-full object-cover">
+                        <img src="{{ asset('images/prog_5.jpg') }}" alt="Abacus" class="w-full h-full object-cover">
                     </div>
                     <h3 class="font-heading font-black text-base uppercase text-brand-navy mb-2">ABACUS & MENTAL MATH</h3>
                     <p class="text-xs text-slate-600 leading-relaxed font-sans">
@@ -667,7 +667,7 @@
             <div class="w-[300px] sm:w-[320px] bg-[#fef8f0] text-slate-800 p-5 rounded-3xl shadow-lg flex-shrink-0 transition transform hover:-translate-y-2 hover:shadow-2xl duration-300 flex flex-col justify-between">
                 <div>
                     <div class="h-44 rounded-2xl overflow-hidden mb-4 bg-slate-200">
-                        <img src="{{ asset('mockup_assets/prog_6.jpg') }}" alt="Theatre & Oratory" class="w-full h-full object-cover">
+                        <img src="{{ asset('images/prog_6.jpg') }}" alt="Theatre & Oratory" class="w-full h-full object-cover">
                     </div>
                     <h3 class="font-heading font-black text-base uppercase text-brand-navy mb-2">THEATRE & PUBLIC ORATORY</h3>
                     <p class="text-xs text-slate-600 leading-relaxed font-sans">
@@ -729,7 +729,7 @@
         <!-- Jumping 3D Girl Avatar on Top Left of Cloud (from Screenshot 2) -->
         <div class="relative mb-14">
             <div class="absolute left-4 sm:left-16 -top-20 sm:-top-28 pointer-events-none">
-                <img src="{{ asset('mockup_assets/girl_jumping.png') }}" 
+                <img src="{{ asset('images/girl_jumping.png') }}" 
                      alt="Joyful Girl Jumping" 
                      class="w-24 sm:w-32 h-auto drop-shadow-md select-none">
             </div>
@@ -941,7 +941,7 @@
             <div class="lg:col-span-6">
                 <div class="rounded-3xl overflow-hidden shadow-xl relative bg-slate-900 group cursor-pointer"
                      onclick="openVideoModal('https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1', 'The Vision Behind The Manthan Experience')">
-                    <img src="{{ asset('mockup_assets/principal.jpg') }}" alt="Principal" class="w-full h-80 sm:h-96 object-cover group-hover:scale-[1.02] transition duration-300">
+                    <img src="{{ asset('images/principal.jpg') }}" alt="Principal" class="w-full h-80 sm:h-96 object-cover group-hover:scale-[1.02] transition duration-300">
                     <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition flex items-center justify-center">
                         <div class="w-16 h-16 rounded-full bg-cyan-400 hover:bg-cyan-300 text-white flex items-center justify-center shadow-2xl transition transform group-hover:scale-110">
                             <svg class="w-6 h-6 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
@@ -1010,7 +1010,7 @@
 
                 <!-- 3D Boy Playing with Blocks from Screenshot 5 -->
                 <div class="hidden lg:block absolute -right-4 -bottom-8 pointer-events-none">
-                    <img src="{{ asset('mockup_assets/boy_blocks.png') }}" 
+                    <img src="{{ asset('images/boy_blocks.png') }}" 
                          alt="Boy playing with building blocks" 
                          class="w-32 h-auto drop-shadow-lg select-none">
                 </div>
@@ -1041,7 +1041,7 @@
             <div class="bg-[#fef8f0] p-6 rounded-3xl shadow-sm border border-slate-200/80 group">
                 <div class="h-56 rounded-2xl overflow-hidden relative mb-4 bg-slate-900 cursor-pointer"
                      onclick="openVideoModal('https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1', 'Parent Testimonial - Nursery')">
-                    <img src="{{ asset('mockup_assets/parent_1.jpg') }}" alt="Parent" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 opacity-95">
+                    <img src="{{ asset('images/parent_1.jpg') }}" alt="Parent" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 opacity-95">
                     <div class="absolute inset-0 flex items-center justify-center">
                         <div class="w-12 h-12 rounded-full bg-brand-pink hover:bg-brand-pink-hover text-white flex items-center justify-center shadow-lg transition transform group-hover:scale-110">
                             <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
@@ -1056,7 +1056,7 @@
             <div class="bg-[#fef8f0] p-6 rounded-3xl shadow-sm border border-slate-200/80 group">
                 <div class="h-56 rounded-2xl overflow-hidden relative mb-4 bg-slate-900 cursor-pointer"
                      onclick="openVideoModal('https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1', 'Parent Testimonial - Pre-Nursery')">
-                    <img src="{{ asset('mockup_assets/parent_2.jpg') }}" alt="Parent" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 opacity-95">
+                    <img src="{{ asset('images/parent_2.jpg') }}" alt="Parent" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 opacity-95">
                     <div class="absolute inset-0 flex items-center justify-center">
                         <div class="w-12 h-12 rounded-full bg-brand-pink hover:bg-brand-pink-hover text-white flex items-center justify-center shadow-lg transition transform group-hover:scale-110">
                             <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
@@ -1071,7 +1071,7 @@
             <div class="bg-[#fef8f0] p-6 rounded-3xl shadow-sm border border-slate-200/80 group">
                 <div class="h-56 rounded-2xl overflow-hidden relative mb-4 bg-slate-900 cursor-pointer"
                      onclick="openVideoModal('https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1', 'Parent Testimonial - Kindergarten')">
-                    <img src="{{ asset('mockup_assets/parent_3.jpg') }}" alt="Parent" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 opacity-95">
+                    <img src="{{ asset('images/parent_3.jpg') }}" alt="Parent" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 opacity-95">
                     <div class="absolute inset-0 flex items-center justify-center">
                         <div class="w-12 h-12 rounded-full bg-brand-pink hover:bg-brand-pink-hover text-white flex items-center justify-center shadow-lg transition transform group-hover:scale-110">
                             <svg class="w-5 h-5 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
@@ -1088,7 +1088,7 @@
     <!-- Bottom Wave with Cute Winking 3D Boy Avatar from Screenshot 7 -->
     <div class="relative mt-8">
         <div class="flex justify-center -mb-8 pointer-events-none">
-            <img src="{{ asset('mockup_assets/boy_winking.png') }}" 
+            <img src="{{ asset('images/boy_winking.png') }}" 
                  alt="Winking Boy Avatar" 
                  class="w-24 sm:w-32 h-auto drop-shadow-md select-none z-10">
         </div>
@@ -1204,7 +1204,7 @@
 
                 <!-- 3D Boy Thinking with Lightbulb Avatar from Screenshot 3 -->
                 <div class="pt-6 flex items-center space-x-3 pointer-events-none">
-                    <img src="{{ asset('mockup_assets/boy_thinking.png') }}" 
+                    <img src="{{ asset('images/boy_thinking.png') }}" 
                          alt="Thinking Student" 
                          class="w-24 sm:w-32 h-auto drop-shadow-md select-none">
                     <span class="text-xs text-pink-200 italic font-semibold">Have more questions? Ask our admission advisors below!</span>
@@ -1380,7 +1380,7 @@
     <!-- 3D Boy Standing Avatar on Top Center from Screenshot 1 -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div class="flex justify-center -mt-24 sm:-mt-28 mb-4 pointer-events-none">
-            <img src="{{ asset('mockup_assets/boy_standing.png') }}" 
+            <img src="{{ asset('images/boy_standing.png') }}" 
                  alt="Student Standing" 
                  class="w-20 sm:w-28 h-auto drop-shadow-md select-none">
         </div>
@@ -1399,7 +1399,7 @@
             <!-- Campus Entrance Photo & Contact Details -->
             <div class="lg:col-span-6 bg-white p-6 rounded-3xl shadow-sm border border-slate-200/80">
                 <div class="rounded-2xl overflow-hidden mb-6 bg-slate-100 shadow-inner">
-                    <img src="{{ asset('mockup_assets/campus_entrance.jpg') }}" 
+                    <img src="{{ asset('images/campus_entrance.jpg') }}" 
                          alt="The Manthan School Entrance" 
                          class="w-full h-64 sm:h-72 object-cover">
                 </div>
@@ -1430,7 +1430,7 @@
             <!-- Campus Map Graphic from Screenshot 1 -->
             <div class="lg:col-span-6 bg-white p-6 rounded-3xl shadow-sm border border-slate-200/80">
                 <div class="rounded-2xl overflow-hidden relative shadow-inner group">
-                    <img src="{{ asset('mockup_assets/campus_map.jpg') }}" 
+                    <img src="{{ asset('images/campus_map.jpg') }}" 
                          alt="Campus Map Sector 78 Noida" 
                          class="w-full h-auto object-cover group-hover:scale-105 transition duration-500">
                     
