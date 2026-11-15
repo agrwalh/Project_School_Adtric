@@ -35,10 +35,11 @@ COPY . .
 # Install production dependencies (with --ignore-platform-reqs to allow PHP 8.4+)
 RUN composer install --no-dev --optimize-autoloader --no-interaction --ignore-platform-reqs
 
-# Create storage symlink and set permissions
-RUN php artisan storage:link || true \
+# Set permissions
+RUN chmod +x entrypoint.sh \
+    && php artisan storage:link || true \
     && chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache \
     && chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
 
-# Start Apache with Render port support
-CMD ["sh", "-c", "export PORT=${PORT:-80} && sed -i \"s/Listen .*/Listen ${PORT}/\" /etc/apache2/ports.conf && sed -i \"s/<VirtualHost .*>/<VirtualHost *:${PORT}>/\" /etc/apache2/sites-available/000-default.conf && apache2-foreground"]
+# Start Apache with Render port support & automated migrations
+CMD ["./entrypoint.sh"]
