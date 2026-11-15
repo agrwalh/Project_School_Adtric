@@ -54,11 +54,8 @@
                 WORLD OF <span class="text-white">BIG</span> <br>
                 BEGINNINGS
             </h1>
-            <p class="mt-4 sm:mt-6 text-sm sm:text-base text-slate-100 max-w-lg leading-relaxed font-sans">
-                Early years education rooted in play, care and curious discovery. For toddlers to Grade 2.
-            </p>
 
-            <div class="flex flex-wrap items-center gap-4 pt-6">
+            <div class="flex flex-wrap items-center gap-4 pt-8">
                 <!-- Book a campus visit pill button matching screenshot 14 -->
                 <a href="#enquiry" 
                    class="px-8 py-3.5 rounded-full border-2 border-white text-white hover:bg-white hover:text-brand-navy font-bold text-xs uppercase tracking-wider backdrop-blur-sm transition duration-200 transform hover:-translate-y-0.5 shadow-lg">
