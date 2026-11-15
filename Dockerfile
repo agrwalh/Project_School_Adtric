@@ -2,6 +2,7 @@ FROM php:8.4-apache
 
 # Install required system packages and PHP extensions
 RUN apt-get update && apt-get install -y \
+    ca-certificates \
     libpng-dev \
     libjpeg-dev \
     libwebp-dev \
@@ -10,6 +11,7 @@ RUN apt-get update && apt-get install -y \
     unzip \
     git \
     curl \
+    && update-ca-certificates \
     && docker-php-ext-configure gd --with-jpeg --with-webp \
     && docker-php-ext-install pdo pdo_mysql gd zip bcmath \
     && a2enmod rewrite \
