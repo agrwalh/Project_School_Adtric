@@ -21,7 +21,7 @@ SET @@SESSION.SQL_LOG_BIN= 0;
 -- GTID state at the beginning of the backup 
 --
 
-SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '4e6fc088-36f7-11f1-9286-38d275d3c04a:1-3195';
+-- SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '4e6fc088-36f7-11f1-9286-38d275d3c04a:1-3195';
 
 --
 -- Table structure for table `admission_enquiries`
