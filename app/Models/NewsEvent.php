@@ -74,7 +74,7 @@ class NewsEvent extends Model
             return asset('storage/' . $this->image);
         }
 
-        if ($this->image && str_starts_by($this->image, 'http')) {
+        if ($this->image && str_starts_with($this->image, 'http')) {
             return $this->image;
         }
 
