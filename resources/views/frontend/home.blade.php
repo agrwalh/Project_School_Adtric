@@ -39,6 +39,16 @@
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
         <div class="max-w-2xl text-white">
+            
+            <!-- Admissions Open Live Indicator Pill -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/15 backdrop-blur-md border border-white/25 text-white text-[11px] font-bold tracking-wider uppercase mb-5 shadow-sm">
+                <span class="relative flex h-2 w-2">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span>
+                </span>
+                <span>Admissions Open 2026-27 &bull; Sector 78 Noida</span>
+            </div>
+
             <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black font-heading leading-tight tracking-tight drop-shadow-md select-none">
                 A LITTLE <br>
                 WORLD OF <span class="text-white">BIG</span> <br>
@@ -65,6 +75,27 @@
                     <span>Watch the school film</span>
                 </button>
             </div>
+
+            <!-- Key Trust Badges -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-8 text-white/90 max-w-xl">
+                <div class="flex items-center space-x-2 bg-black/30 backdrop-blur-md px-3 py-2 rounded-xl border border-white/10 shadow-sm">
+                    <span class="text-brand-pink text-base font-black">1:10</span>
+                    <span class="text-[10px] leading-tight text-slate-200 font-semibold">Teacher:Child Ratio</span>
+                </div>
+                <div class="flex items-center space-x-2 bg-black/30 backdrop-blur-md px-3 py-2 rounded-xl border border-white/10 shadow-sm">
+                    <span class="text-brand-pink text-base font-black">100%</span>
+                    <span class="text-[10px] leading-tight text-slate-200 font-semibold">CCTV Secured</span>
+                </div>
+                <div class="flex items-center space-x-2 bg-black/30 backdrop-blur-md px-3 py-2 rounded-xl border border-white/10 shadow-sm">
+                    <span class="text-brand-pink text-base font-black">CBSE</span>
+                    <span class="text-[10px] leading-tight text-slate-200 font-semibold">Affiliated Hub</span>
+                </div>
+                <div class="flex items-center space-x-2 bg-black/30 backdrop-blur-md px-3 py-2 rounded-xl border border-white/10 shadow-sm">
+                    <span class="text-brand-pink text-base font-black">4.9★</span>
+                    <span class="text-[10px] leading-tight text-slate-200 font-semibold">Parent Rating</span>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -1296,13 +1327,20 @@
                         <div class="pt-2">
                             <button type="submit" 
                                     id="enquiry-submit-btn" 
-                                    class="w-full py-3.5 rounded-xl bg-brand-pink hover:bg-brand-pink-hover text-white font-bold text-xs uppercase tracking-wider transition shadow-lg flex items-center justify-center">
+                                    class="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-pink via-pink-600 to-rose-600 hover:from-rose-600 hover:to-brand-pink text-white font-extrabold text-xs uppercase tracking-wider transition-all duration-300 transform hover:-translate-y-0.5 shadow-xl shadow-pink-900/20 flex items-center justify-center">
                                 <span>Book My Visit</span>
+                                <svg class="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                                 <svg id="enquiry-spinner" class="animate-spin ml-2 h-4 w-4 text-white hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                                     <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
                                     <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"></path>
                                 </svg>
                             </button>
+                        </div>
+
+                        <div class="text-center pt-2 flex items-center justify-center space-x-2 text-[10px] text-slate-400 font-medium">
+                            <span>🔒 100% Privacy Protected</span>
+                            <span>&bull;</span>
+                            <span>Direct Admissions Desk</span>
                         </div>
 
                         <div class="text-center pt-1">

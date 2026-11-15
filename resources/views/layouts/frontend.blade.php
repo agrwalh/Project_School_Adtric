@@ -30,6 +30,21 @@
         h1, h2, h3, h4, h5, h6, .font-heading {
             font-family: 'Outfit', sans-serif;
         }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 9999px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #e11d48;
+        }
     </style>
     @stack('styles')
 </head>
@@ -255,7 +270,7 @@
                     <span>|</span>
                     <a href="#" class="hover:text-white">Careers</a>
                     <span>|</span>
-                    <a href="#" class="hover:text-white">Privacy Polic</a>
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
                     <span>|</span>
                     <a href="#" class="hover:text-white">Terms of Use</a>
                     <span>|</span>
@@ -272,9 +287,20 @@
 
     <!-- Floating Chat & WhatsApp Action Widgets (Matching Screenshot 6) -->
     <div class="fixed bottom-6 right-6 z-40 flex flex-col items-center space-y-3">
+        <!-- Back to Top Button -->
+        <button id="back-to-top-btn" 
+                type="button" 
+                onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+                aria-label="Back to Top"
+                title="Scroll to top"
+                class="w-11 h-11 rounded-full bg-white/95 hover:bg-white text-brand-navy shadow-xl border border-slate-200 flex items-center justify-center transition-all duration-300 opacity-0 pointer-events-none translate-y-3 hover:scale-110">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"/></svg>
+        </button>
+
         <!-- Live Chat Bubble -->
         <a href="#enquiry" 
            aria-label="Chat with Admissions"
+           title="Enquire with Admissions"
            class="w-12 h-12 rounded-full bg-brand-navy hover:bg-brand-navy-dark text-white flex items-center justify-center shadow-2xl transition transform hover:scale-110 border-2 border-white/80 group">
             <svg class="w-6 h-6 fill-current group-hover:scale-110 transition" viewBox="0 0 24 24">
                 <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/>
@@ -286,6 +312,7 @@
            target="_blank" 
            rel="noopener noreferrer" 
            aria-label="Connect on WhatsApp"
+           title="Chat on WhatsApp"
            class="w-12 h-12 rounded-full bg-[#25D366] hover:bg-[#20ba59] text-white flex items-center justify-center shadow-2xl transition transform hover:scale-110 border-2 border-white/80 group">
             <svg class="w-6 h-6 fill-current group-hover:scale-110 transition" viewBox="0 0 24 24">
                 <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.983.541 1.839.818 2.796.818 3.179 0 5.766-2.586 5.767-5.766.001-3.18-2.585-5.766-5.767-5.766zm3.374 8.243c-.145.405-.729.743-1.047.788-.309.043-.699.066-2.261-.582-1.999-.828-3.262-2.887-3.361-3.02-.099-.133-.809-1.077-.809-2.053 0-.976.512-1.455.694-1.654.182-.199.397-.249.53-.249.133 0 .265.002.381.008.123.006.287-.047.45.344.166.398.564 1.378.614 1.478.05.1.083.216.017.348-.066.133-.1.216-.199.332-.099.116-.208.26-.297.349-.1.1-.204.208-.088.407.116.199.516.852 1.107 1.38.761.679 1.402.889 1.601.989.199.1.315.083.431-.05.116-.133.498-.581.63-.78.133-.199.265-.166.448-.099.182.066 1.157.546 1.356.645.199.1.332.149.381.232.05.083.05.481-.095.886zM12 2C6.477 2 2 6.477 2 12c0 1.891.524 3.662 1.435 5.178L2 22l4.981-1.398A9.954 9.954 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/>
@@ -293,13 +320,26 @@
         </a>
     </div>
 
-    <!-- Mobile Drawer Script -->
+    <!-- Mobile Drawer & Back-to-Top Script -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const btn = document.getElementById('mobile-menu-btn');
             const menu = document.getElementById('mobile-menu');
             if (btn && menu) {
                 btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+            }
+
+            const btt = document.getElementById('back-to-top-btn');
+            if (btt) {
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 400) {
+                        btt.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-3');
+                        btt.classList.add('opacity-100', 'pointer-events-auto', 'translate-y-0');
+                    } else {
+                        btt.classList.add('opacity-0', 'pointer-events-none', 'translate-y-3');
+                        btt.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
+                    }
+                });
             }
         });
     </script>
