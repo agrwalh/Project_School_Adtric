@@ -37,6 +37,15 @@ Route::get('/admin/login', function () {
     return redirect()->route('login');
 });
 
+// One-click helper for shared hosting storage symlink
+Route::get('/setup-storage-link', function () {
+    if (request('secret') !== 'manthan2026') {
+        abort(403, 'Unauthorized');
+    }
+    \Illuminate\Support\Facades\Artisan::call('storage:link');
+    return response('Storage link created successfully!', 200);
+});
+
 Route::get('/dashboard', function () {
     return redirect()->route('admin.dashboard');
 })->middleware('auth')->name('dashboard');
