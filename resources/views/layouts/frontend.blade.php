@@ -107,8 +107,8 @@
                 <!-- Desktop Menu -->
                 <nav class="hidden lg:flex items-center space-x-6 text-xs font-bold text-slate-700">
                     <a href="{{ route('home') }}" class="hover:text-brand-pink transition">About Us</a>
-                    <a href="{{ route('home') }}#programmes" class="hover:text-brand-pink transition">Academics</a>
-                    <a href="{{ route('home') }}#programmes" class="hover:text-brand-pink transition">Beyond Academics</a>
+                    <a href="{{ route('home') }}#academics" class="hover:text-brand-pink transition">Academics</a>
+                    <a href="{{ route('home') }}#beyond-academics" class="hover:text-brand-pink transition">Beyond Academics</a>
                     <a href="{{ route('home') }}#campus" class="hover:text-brand-pink transition">Campus and Facilities</a>
                     <a href="{{ route('news-events.index') }}" class="hover:text-brand-pink transition {{ request()->routeIs('news-events.*') ? 'text-brand-pink' : '' }}">Results and Media</a>
                     <a href="{{ route('home') }}#enquiry" class="hover:text-brand-pink transition">Admissions</a>
@@ -138,8 +138,8 @@
         <!-- Mobile Drawer -->
         <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-100 bg-white px-4 pt-3 pb-6 space-y-2 text-xs font-bold text-slate-700">
             <a href="{{ route('home') }}" class="block py-2">About Us</a>
-            <a href="{{ route('home') }}#programmes" class="block py-2">Academics</a>
-            <a href="{{ route('home') }}#programmes" class="block py-2">Beyond Academics</a>
+            <a href="{{ route('home') }}#academics" class="block py-2">Academics</a>
+            <a href="{{ route('home') }}#beyond-academics" class="block py-2">Beyond Academics</a>
             <a href="{{ route('home') }}#campus" class="block py-2">Campus and Facilities</a>
             <a href="{{ route('news-events.index') }}" class="block py-2 text-brand-pink">Results and Media (News & Events)</a>
             <a href="{{ route('home') }}#enquiry" class="block py-2">Admissions</a>

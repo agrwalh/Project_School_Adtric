@@ -195,9 +195,11 @@
 
 <!-- ============================================================== -->
 <!-- SECTION 4: THE RIGHT BEGINNING FOR EVERY STAGE (Screenshot 9)  -->
+<!-- ACADEMICS SECTION (#academics target)                          -->
 <!-- Interactive Smooth Carousel Slider                             -->
 <!-- ============================================================== -->
-<section id="programmes" class="bg-brand-pink py-16 lg:py-20 text-white relative overflow-hidden">
+<section id="academics" class="bg-brand-pink py-16 lg:py-20 text-white relative overflow-hidden scroll-mt-20">
+    <div id="programmes" class="absolute -top-24"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto mb-10">
@@ -603,9 +605,10 @@
 
 <!-- ============================================================== -->
 <!-- SECTION 7: SIGNATURE PROGRAMMES (Matching Screenshot 4)        -->
+<!-- BEYOND ACADEMICS SECTION (#beyond-academics target)            -->
 <!-- Interactive Programmes Carousel Slider                         -->
 <!-- ============================================================== -->
-<section class="bg-brand-navy py-16 lg:py-20 text-white relative overflow-hidden">
+<section id="beyond-academics" class="bg-brand-navy py-16 lg:py-20 text-white relative overflow-hidden scroll-mt-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-10">
