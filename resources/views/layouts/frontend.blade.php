@@ -48,7 +48,7 @@
     </style>
     @stack('styles')
 </head>
-<body class="antialiased min-h-screen flex flex-col bg-slate-50">
+<body class="antialiased min-h-screen flex flex-col bg-slate-50 overflow-x-hidden">
 
     <!-- Top Utility Bar from Screenshot 14 -->
     <div class="bg-brand-navy-dark text-slate-200 text-xs py-2 px-4 sm:px-8 border-b border-white/10 hidden md:block">
