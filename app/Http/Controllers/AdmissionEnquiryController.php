@@ -3,10 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreAdmissionEnquiryRequest;
+use App\Mail\NewAdmissionEnquiryMail;
 use App\Models\AdmissionEnquiry;
 use App\Services\CrmWebhookService;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 
 class AdmissionEnquiryController extends Controller
 {
@@ -48,6 +50,14 @@ class AdmissionEnquiryController extends Controller
             $crmService->push($enquiry);
         } catch (\Throwable $e) {
             Log::error("Unexpected CRM dispatch exception for enquiry #{$enquiry->id}: " . $e->getMessage());
+        }
+
+        // Email alert to admissions team (non-blocking)
+        try {
+            $recipient = env('ADMISSIONS_EMAIL', 'admissions@manthan.edu.in');
+            Mail::to($recipient)->send(new NewAdmissionEnquiryMail($enquiry));
+        } catch (\Throwable $e) {
+            Log::error("Email alert failed for enquiry #{$enquiry->id}: " . $e->getMessage());
         }
 
         return response()->json([
