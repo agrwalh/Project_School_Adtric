@@ -260,7 +260,7 @@
 
             <!-- Banner Line from Screenshot 6 -->
             <div class="py-6 text-center text-xs text-slate-300 border-b border-white/10">
-                Looking for Grades 3 to 12? <a href="#" class="text-cyan-400 hover:underline font-semibold">Visit our Greater Noida West campus</a>
+                Looking for Grades 3 to 12 ? &nbsp;<a href="#" class="text-cyan-400 hover:underline font-semibold ml-1">Visit our Greater Noida West campus</a>
             </div>
 
             <!-- Bottom Line from Screenshot 6 -->
