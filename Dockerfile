@@ -1,4 +1,4 @@
-FROM php:8.3-apache
+FROM php:8.4-apache
 
 # Install required system packages and PHP extensions
 RUN apt-get update && apt-get install -y \
@@ -32,8 +32,8 @@ COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 # Copy application files
 COPY . .
 
-# Install production dependencies
-RUN composer install --no-dev --optimize-autoloader --no-interaction
+# Install production dependencies (with --ignore-platform-reqs to allow PHP 8.4+)
+RUN composer install --no-dev --optimize-autoloader --no-interaction --ignore-platform-reqs
 
 # Create storage symlink and set permissions
 RUN php artisan storage:link || true \
