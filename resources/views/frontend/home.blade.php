@@ -119,22 +119,12 @@
 <section class="bg-white py-16 lg:py-20 relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         
-        <!-- Top Section Header with Running 3D Boy on Top-Left and Centered Title -->
-        <div class="relative flex items-center justify-center mb-10 min-h-[80px]">
-            <!-- Running 3D Boy on the Left (from Screenshot 10) -->
-            <div class="absolute left-0 top-0 pointer-events-none">
-                <img src="{{ asset('images/boy_running.png') }}" 
-                     alt="Active Student Running" 
-                     class="w-20 sm:w-28 h-auto drop-shadow-sm select-none">
-            </div>
-
-            <!-- Centered Section Title with Pink Wave Underline -->
-            <div class="text-center">
-                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black font-heading text-brand-navy tracking-tight select-none">
-                    WHY THE MANTHAN SCHOOL
-                </h2>
-                <div class="w-28 h-1.5 bg-brand-pink rounded-full mx-auto mt-2"></div>
-            </div>
+        <!-- Centered Section Title with Pink Wave Underline -->
+        <div class="text-center mb-10">
+            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-black font-heading text-brand-navy tracking-tight select-none">
+                WHY THE MANTHAN SCHOOL
+            </h2>
+            <div class="w-28 h-1.5 bg-brand-pink rounded-full mx-auto mt-2"></div>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mt-6">
@@ -726,20 +716,13 @@
 <section id="safe" class="bg-white py-16 lg:py-20 relative">
     
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <!-- Jumping 3D Girl Avatar on Top Left of Cloud (from Screenshot 2) -->
-        <div class="relative mb-14">
-            <div class="absolute left-4 sm:left-16 -top-20 sm:-top-28 pointer-events-none">
-                <img src="{{ asset('images/girl_jumping.png') }}" 
-                     alt="Joyful Girl Jumping" 
-                     class="w-24 sm:w-32 h-auto drop-shadow-md select-none">
-            </div>
-
-            <div class="text-center max-w-xl mx-auto">
-                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading text-brand-navy tracking-tight select-none">
-                    HOW WE KEEP <br>
-                    YOUR CHILD SAFE
-                </h2>
-            </div>
+        <!-- Centered Header for Safety Section -->
+        <div class="text-center max-w-xl mx-auto mb-14">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading text-brand-navy tracking-tight select-none">
+                HOW WE KEEP <br>
+                YOUR CHILD SAFE
+            </h2>
+            <div class="w-24 h-1.5 bg-brand-pink rounded-full mx-auto mt-4"></div>
         </div>
 
         <!-- 8 Grid Cards (4x2) Matching Exact Icons & Text from Screenshot 2 -->
@@ -1008,13 +991,6 @@
                     </a>
                 </div>
 
-                <!-- 3D Boy Playing with Blocks from Screenshot 5 -->
-                <div class="hidden lg:block absolute -right-4 -bottom-8 pointer-events-none">
-                    <img src="{{ asset('images/boy_blocks.png') }}" 
-                         alt="Boy playing with building blocks" 
-                         class="w-32 h-auto drop-shadow-lg select-none">
-                </div>
-
             </div>
         </div>
     </div>
@@ -1083,15 +1059,6 @@
             </div>
         </div>
 
-    </div>
-
-    <!-- Bottom Wave with Cute Winking 3D Boy Avatar from Screenshot 7 -->
-    <div class="relative mt-8">
-        <div class="flex justify-center -mb-8 pointer-events-none">
-            <img src="{{ asset('images/boy_winking.png') }}" 
-                 alt="Winking Boy Avatar" 
-                 class="w-24 sm:w-32 h-auto drop-shadow-md select-none z-10">
-        </div>
     </div>
 </section>
 
@@ -1202,12 +1169,13 @@
                     </div>
                 </div>
 
-                <!-- 3D Boy Thinking with Lightbulb Avatar from Screenshot 3 -->
-                <div class="pt-6 flex items-center space-x-3 pointer-events-none">
-                    <img src="{{ asset('images/boy_thinking.png') }}" 
-                         alt="Thinking Student" 
-                         class="w-24 sm:w-32 h-auto drop-shadow-md select-none">
-                    <span class="text-xs text-pink-200 italic font-semibold">Have more questions? Ask our admission advisors below!</span>
+                <div class="pt-6 flex items-center space-x-3">
+                    <div class="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center text-white shrink-0">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <span class="text-xs text-pink-100 italic font-medium">Have more questions? Ask our admission advisors in the form!</span>
                 </div>
             </div>
 
@@ -1377,13 +1345,7 @@
 <!-- ============================================================== -->
 <section class="bg-[#fcfaf7] py-16 lg:py-20 relative">
     
-    <!-- 3D Boy Standing Avatar on Top Center from Screenshot 1 -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div class="flex justify-center -mt-24 sm:-mt-28 mb-4 pointer-events-none">
-            <img src="{{ asset('images/boy_standing.png') }}" 
-                 alt="Student Standing" 
-                 class="w-20 sm:w-28 h-auto drop-shadow-md select-none">
-        </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative pt-4">
 
         <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8">
             <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading text-brand-navy tracking-tight select-none">
