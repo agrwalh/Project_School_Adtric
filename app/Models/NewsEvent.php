@@ -74,6 +74,10 @@ class NewsEvent extends Model
             return asset('storage/' . $this->image);
         }
 
+        if ($this->image && file_exists(public_path('images/' . $this->image))) {
+            return asset('images/' . $this->image);
+        }
+
         if ($this->image && str_starts_with($this->image, 'http')) {
             return $this->image;
         }
@@ -82,7 +86,11 @@ class NewsEvent extends Model
             return asset($this->image);
         }
 
-        // Clean SVG placeholder based on category
-        return 'https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1200&q=80';
+        // Distinct category fallbacks so no two cards look identical if missing
+        return match ($this->category) {
+            'Achievement' => 'https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=800&q=80',
+            'Event' => 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=800&q=80',
+            default => 'https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800&q=80',
+        };
     }
 }

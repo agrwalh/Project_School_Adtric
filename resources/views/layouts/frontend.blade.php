@@ -160,7 +160,7 @@
     <!-- ============================================================== -->
     <!-- SECTION 14: FOOTER (Exact Match to Screenshot 6)               -->
     <!-- ============================================================== -->
-    <footer id="contact" class="bg-brand-navy text-white pt-16 pb-8 relative overflow-visible">
+    <footer id="footer" class="bg-brand-navy text-white pt-16 pb-8 relative overflow-visible">
         
         <!-- Top Cloud Curves Divider with 3D Avatars (Matching Screenshot 6) -->
         <div class="absolute top-0 left-0 right-0 h-10 w-full overflow-hidden leading-none pointer-events-none rotate-180">

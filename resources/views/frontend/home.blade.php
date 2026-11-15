@@ -531,15 +531,18 @@
 
 <!-- ============================================================== -->
 <!-- SECTION 6: THE ROOMS YOUR CHILD WILL BE IN (Screenshot 13)     -->
+<!-- CAMPUS & FACILITIES SECTION (#campus target)                   -->
 <!-- ============================================================== -->
-<section class="bg-[#fcfaf7] py-16 lg:py-20">
+<section id="campus" class="bg-[#fcfaf7] py-16 lg:py-20 scroll-mt-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-xl mx-auto mb-12">
+            <span class="text-brand-pink font-bold text-xs uppercase tracking-widest block mb-2">CAMPUS & INFRASTRUCTURE</span>
             <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading text-brand-navy tracking-tight select-none">
                 THE ROOMS YOUR <br>
                 CHILD WILL BE IN
             </h2>
+            <div class="w-24 h-1.5 bg-brand-pink rounded-full mx-auto mt-4"></div>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -1380,8 +1383,9 @@
 
 <!-- ============================================================== -->
 <!-- SECTION 13: COME AND SEE THE CAMPUS (Matching Screenshot 1)    -->
+<!-- CAMPUS ADDRESS & CONTACT SECTION (#contact target)             -->
 <!-- ============================================================== -->
-<section class="bg-[#fcfaf7] py-16 lg:py-20 relative">
+<section id="contact" class="bg-[#fcfaf7] py-16 lg:py-20 relative scroll-mt-20">
     
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative pt-4">
 
