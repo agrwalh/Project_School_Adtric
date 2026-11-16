@@ -64,7 +64,7 @@
 
                 <!-- Watch the school film link with play icon -->
                 <button type="button" 
-                        onclick="openVideoModal('https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1', 'The Manthan School Experience Film')" 
+                        onclick="openVideoModal('https://www.youtube.com/embed/CjLgpw_X3Q4?autoplay=1', 'The Manthan School Experience Film')" 
                         class="inline-flex items-center text-xs font-bold text-white hover:text-pink-300 transition duration-200 group ml-2">
                     <span class="w-10 h-10 rounded-full bg-white/20 border border-white/40 flex items-center justify-center mr-2.5 group-hover:scale-110 group-hover:bg-brand-pink transition">
                         <svg class="w-4 h-4 text-white fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
@@ -128,11 +128,24 @@
                 </div>
             </div>
 
-            <div class="relative">
-                <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20 transform rotate-1 hover:rotate-0 transition duration-300">
+            <div class="relative cursor-pointer group" 
+                 role="button" 
+                 tabindex="0"
+                 aria-label="Play video: Learning Begins with Wonder - Music and Rhythm Experience"
+                 onclick="openVideoModal('https://www.youtube.com/embed/CjLgpw_X3Q4?autoplay=1', 'Learning Begins with Wonder - The Manthan School Music & Rhythm Experience')"
+                 onkeydown="if(event.key==='Enter'||event.key===' ') { event.preventDefault(); openVideoModal('https://www.youtube.com/embed/CjLgpw_X3Q4?autoplay=1', 'Learning Begins with Wonder - The Manthan School Music & Rhythm Experience'); }">
+                <div class="rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20 transform rotate-1 group-hover:rotate-0 group-hover:scale-[1.02] transition duration-300 relative">
                     <img src="{{ asset('images/drums_photo.jpg') }}" 
-                         alt="Children playing drums at Manthan School" 
+                         alt="Children playing drums at Manthan School - Click to watch video" 
                          class="w-full h-auto object-cover">
+                    <!-- Subtle hover overlay -->
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/15 transition duration-300 flex items-center justify-center pointer-events-none"></div>
+                </div>
+                <!-- Interactive Play Badge -->
+                <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-white text-brand-navy font-bold text-xs px-4 py-1.5 rounded-full shadow-xl border border-pink-200 group-hover:bg-cyan-50 group-hover:border-cyan-400 group-hover:scale-105 transition duration-200 flex items-center gap-2 whitespace-nowrap">
+                    <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping"></span>
+                    <span>Watch School Experience Video</span>
+                    <svg class="w-3.5 h-3.5 text-cyan-500 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
                 </div>
             </div>
 
@@ -957,7 +970,7 @@
             <!-- Principal Video Box with interactive play trigger -->
             <div class="lg:col-span-6">
                 <div class="rounded-3xl overflow-hidden shadow-xl relative bg-slate-900 group cursor-pointer"
-                     onclick="openVideoModal('https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1', 'The Vision Behind The Manthan Experience')">
+                     onclick="openVideoModal('https://www.youtube.com/embed/CjLgpw_X3Q4?autoplay=1', 'The Vision Behind The Manthan Experience')">
                     <img src="{{ asset('images/principal.jpg') }}" alt="Principal" class="w-full h-80 sm:h-96 object-cover group-hover:scale-[1.02] transition duration-300">
                     <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition flex items-center justify-center">
                         <div class="w-16 h-16 rounded-full bg-cyan-400 hover:bg-cyan-300 text-white flex items-center justify-center shadow-2xl transition transform group-hover:scale-110">
@@ -1050,7 +1063,7 @@
             <!-- Testimonial 1 -->
             <div class="bg-[#fef8f0] p-6 rounded-3xl shadow-sm border border-slate-200/80 group">
                 <div class="h-56 rounded-2xl overflow-hidden relative mb-4 bg-slate-900 cursor-pointer"
-                     onclick="openVideoModal('https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1', 'Parent Testimonial - Nursery')">
+                     onclick="openVideoModal('https://www.youtube.com/embed/CjLgpw_X3Q4?autoplay=1', 'Parent Testimonial - Nursery')">
                     <img src="{{ asset('images/parent_1.jpg') }}" alt="Parent" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 opacity-95">
                     <div class="absolute inset-0 flex items-center justify-center">
                         <div class="w-12 h-12 rounded-full bg-brand-pink hover:bg-brand-pink-hover text-white flex items-center justify-center shadow-lg transition transform group-hover:scale-110">
@@ -1065,7 +1078,7 @@
             <!-- Testimonial 2 -->
             <div class="bg-[#fef8f0] p-6 rounded-3xl shadow-sm border border-slate-200/80 group">
                 <div class="h-56 rounded-2xl overflow-hidden relative mb-4 bg-slate-900 cursor-pointer"
-                     onclick="openVideoModal('https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1', 'Parent Testimonial - Pre-Nursery')">
+                     onclick="openVideoModal('https://www.youtube.com/embed/CjLgpw_X3Q4?autoplay=1', 'Parent Testimonial - Pre-Nursery')">
                     <img src="{{ asset('images/parent_2.jpg') }}" alt="Parent" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 opacity-95">
                     <div class="absolute inset-0 flex items-center justify-center">
                         <div class="w-12 h-12 rounded-full bg-brand-pink hover:bg-brand-pink-hover text-white flex items-center justify-center shadow-lg transition transform group-hover:scale-110">
@@ -1080,7 +1093,7 @@
             <!-- Testimonial 3 -->
             <div class="bg-[#fef8f0] p-6 rounded-3xl shadow-sm border border-slate-200/80 group">
                 <div class="h-56 rounded-2xl overflow-hidden relative mb-4 bg-slate-900 cursor-pointer"
-                     onclick="openVideoModal('https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1', 'Parent Testimonial - Kindergarten')">
+                     onclick="openVideoModal('https://www.youtube.com/embed/CjLgpw_X3Q4?autoplay=1', 'Parent Testimonial - Kindergarten')">
                     <img src="{{ asset('images/parent_3.jpg') }}" alt="Parent" class="w-full h-full object-cover group-hover:scale-105 transition duration-300 opacity-95">
                     <div class="absolute inset-0 flex items-center justify-center">
                         <div class="w-12 h-12 rounded-full bg-brand-pink hover:bg-brand-pink-hover text-white flex items-center justify-center shadow-lg transition transform group-hover:scale-110">
