@@ -103,7 +103,6 @@
                             <th class="py-3 px-2">Parent & Contact</th>
                             <th class="py-3 px-2">Status</th>
                             <th class="py-3 px-2">CRM</th>
-                            <th class="py-3 px-2">Received</th>
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-slate-100 font-medium text-slate-700">
@@ -138,9 +137,6 @@
                                     @else
                                         <span class="text-slate-400 text-[11px]">Pending</span>
                                     @endif
-                                </td>
-                                <td class="py-3.5 px-2 text-slate-400 text-[11px]">
-                                    {{ $enquiry->created_at->diffForHumans() }}
                                 </td>
                             </tr>
                         @endforeach

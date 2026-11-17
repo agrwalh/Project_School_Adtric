@@ -89,7 +89,6 @@
                     <th class="py-3.5 px-4">Message / Notes</th>
                     <th class="py-3.5 px-4">Follow-Up Status (AJAX)</th>
                     <th class="py-3.5 px-4">CRM Push</th>
-                    <th class="py-3.5 px-4">Submitted</th>
                     <th class="py-3.5 px-4 text-right">Action</th>
                 </tr>
             </thead>
@@ -181,12 +180,6 @@
                             @endif
                         </td>
 
-                        <!-- Submitted Time -->
-                        <td class="py-3.5 px-4 text-slate-400 text-[11px] whitespace-nowrap">
-                            <div>{{ $enquiry->created_at->format('M d, Y') }}</div>
-                            <div class="text-[10px] text-slate-400">{{ $enquiry->created_at->format('h:i A') }}</div>
-                        </td>
-
                         <!-- Action -->
                         <td class="py-3.5 px-4 text-right">
                             <form method="POST" action="{{ route('admin.enquiries.destroy', $enquiry) }}" onsubmit="return confirm('Delete this enquiry record?');" class="inline">
@@ -200,7 +193,7 @@
                     </tr>
                 @empty
                     <tr>
-                        <td colspan="9" class="text-center py-12 text-slate-400">
+                        <td colspan="8" class="text-center py-12 text-slate-400">
                             No admission enquiries match the selected filter.
                         </td>
                     </tr>
